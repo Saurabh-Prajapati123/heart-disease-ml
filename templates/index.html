@@ -1,0 +1,19 @@
+<form action="/predict" method="POST">
+    <input type="text" name="age" placeholder="Age" required>
+    <input type="text" name="sex" placeholder="Sex (0/1)" required>
+    <input type="text" name="cp" placeholder="Chest Pain Type" required>
+    <input type="text" name="trestbps" placeholder="Resting BP" required>
+    <input type="text" name="chol" placeholder="Cholesterol" required>
+    <input type="text" name="fbs" placeholder="Fasting Blood Sugar" required>
+    <input type="text" name="restecg" placeholder="Rest ECG" required>
+    <input type="text" name="thalach" placeholder="Max Heart Rate" required>
+    <input type="text" name="exang" placeholder="Exercise Angina" required>
+    <input type="text" name="oldpeak" placeholder="Oldpeak" required>
+    <input type="text" name="slope" placeholder="Slope" required>
+    <input type="text" name="ca" placeholder="Major Vessels" required>
+    <input type="text" name="thal" placeholder="Thal" required>
+
+    <button type="submit">Predict</button>
+</form>
+
+<h3>{{ prediction_text }}</h3>
